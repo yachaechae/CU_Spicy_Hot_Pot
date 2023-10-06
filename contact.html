@@ -17,34 +17,43 @@
         font-family: 'Noto Sans KR', sans-serif;
       }
 
-      body {
-        width: 100%;
-        height: 100%;
-      }
-
       .container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        position: relative;
+        padding: 3rem;
 
         /* 이하 코드는 완성 후 삭제 예정 */
+        background-color: green;
         border: 1px solid black;
       }
 
+      .container__title {
+        margin-bottom: 2rem;
+      }
+
       .container__box {
-        width: 500px;
-        height: 500px;
+        position: relative;
+        width: 50rem;
+        height: 40rem;
         margin: 40px auto 40px auto;
         padding: 40px;
 
         /* 이하 코드는 완성 후 삭제 예정 */
+        background-color: aquamarine;
         border: 1px solid black;
       }
 
+      .container__cheerup {
+        font-size: 0.9rem;
+      }
+
+      .container__sendmsg {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
       .btn {
-        /* 이하 코드는 완성 후 삭제 예정 */
-        border: 1px solid black;
+        padding: 15px 50px;
+        border-radius: 30px;
       }
     </style>
   </head>
@@ -53,24 +62,26 @@
       <h1 class="container__title">CONATCT</h1>
       <p>
         저희는 게더타운에 있어요! <br />
-        지금 바로 게더타운으로 출발 하세요!
+        지금 바로 게더타운으로 출발하세요!
       </p>
       <div class="container__box">
         <p class="container__cheerup">CHEER UP!</p>
         <p class="container__sendmsg">응원 메세지 보내기</p>
-        <div class="mb-3">
+        <div class="d-flex mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="text" class="form-control" placeholder="Name" />
         </div>
-        <div class="mb-3">
+        <div class="d-flex align-items-center mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="email" class="form-control" placeholder="Email" />
         </div>
-        <div class="mb-3">
+        <div class="d-flex mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="text" class="form-control" placeholder="Message" />
         </div>
-        <button type="button" class="btn btn-primary">SEND</button>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary">SEND</button>
+        </div>
       </div>
     </section>
   </body>
