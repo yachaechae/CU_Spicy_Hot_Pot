@@ -21,7 +21,6 @@
         max-width: 1200px;
         width: 100vw;
         margin: 0 auto;
-        overflow: hidden;
       }
 
       .container {
@@ -46,6 +45,8 @@
         justify-content: start;
         height: 60vh;
         padding: 4rem 5rem;
+        border-radius: 10px;
+
 
         /* 이하 코드는 완성 후 삭제 예정 */
         background-color: aquamarine;
@@ -62,8 +63,26 @@
         margin-bottom: 2rem;
       }
 
-      .btn {
-        padding: 15px 50px;
+      .container__forms {
+        margin: 0 auto;
+      }
+
+      #container__form {
+        width: 35rem;
+        height: 3.5rem;
+        border-radius: 10px;
+      }
+
+      #container__msgform {
+        height: 11rem;
+        padding: 0.8rem 0.8rem;
+        border-radius: 10px;
+        resize: none;
+      }
+
+      #container__button {
+        margin: 0 auto;
+        padding: 1rem 3rem;
         border-radius: 30px;
       }
     </style>
@@ -78,20 +97,26 @@
       <div class="container__box">
         <p class="container__cheerup">CHEER UP!</p>
         <p class="container__sendmsg">응원 메세지 보내기</p>
-        <div class="d-flex mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Name" />
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="email" class="form-control" placeholder="Email" />
-        </div>
-        <div class="d-flex mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Message" />
-        </div>
-        <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-primary">SEND</button>
+        <div class="container__forms">
+          <div class="d-flex mb-3">
+            <input type="text" class="form-control" id="container__form" placeholder="Name" />
+          </div>
+          <div class="d-flex mb-3">
+            <input type="email" class="form-control" id="container__form" placeholder="Email" />
+          </div>
+          <div class="d-flex mb-3">
+            <textarea
+              class="form-control"
+              id="container__msgform"
+              placeholder="Message"
+              maxlength="354"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="d-flex">
+            <button type="button" class="btn btn-primary" id="container__button">SEND</button>
+          </div>
         </div>
       </div>
     </section>
