@@ -18,59 +18,81 @@
       }
 
       body {
-        width: 100%;
-        height: 100%;
+        max-width: 1200px;
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
       }
 
       .container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        padding: 2rem;
 
         /* 이하 코드는 완성 후 삭제 예정 */
+        background-color: green;
         border: 1px solid black;
+      }
+
+      .container__title {
+        margin: 1rem 0 2rem 1rem;
+      }
+
+      .container__gogathertown {
+        margin: 0 0 3rem 1rem;
       }
 
       .container__box {
-        width: 500px;
-        height: 500px;
-        margin: 40px auto 40px auto;
-        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 60vh;
+        padding: 4rem 5rem;
 
         /* 이하 코드는 완성 후 삭제 예정 */
+        background-color: aquamarine;
         border: 1px solid black;
       }
 
+      .container__cheerup {
+        font-size: 0.9rem;
+      }
+
+      .container__sendmsg {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+
       .btn {
-        /* 이하 코드는 완성 후 삭제 예정 */
-        border: 1px solid black;
+        padding: 15px 50px;
+        border-radius: 30px;
       }
     </style>
   </head>
   <body>
     <section class="container">
       <h1 class="container__title">CONATCT</h1>
-      <p>
+      <p class="container__gogathertown">
         저희는 게더타운에 있어요! <br />
-        지금 바로 게더타운으로 출발 하세요!
+        지금 바로 게더타운으로 출발하세요!
       </p>
       <div class="container__box">
         <p class="container__cheerup">CHEER UP!</p>
         <p class="container__sendmsg">응원 메세지 보내기</p>
-        <div class="mb-3">
+        <div class="d-flex mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="text" class="form-control" placeholder="Name" />
         </div>
-        <div class="mb-3">
+        <div class="d-flex align-items-center mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="email" class="form-control" placeholder="Email" />
         </div>
-        <div class="mb-3">
+        <div class="d-flex mb-3">
           <label for="exampleFormControlInput1" class="form-label"></label>
           <input type="text" class="form-control" placeholder="Message" />
         </div>
-        <button type="button" class="btn btn-primary">SEND</button>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary">SEND</button>
+        </div>
       </div>
     </section>
   </body>
