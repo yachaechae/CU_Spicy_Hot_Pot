@@ -1,54 +1,82 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팀원소개</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
-        .container { 
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        .container {
             border: 1px solid #ccc;
+
             width: 1200px;
-            height: 900px;
+            height: 850px;
             margin: 10px auto 10px auto;
 
         }
 
         .container>hr {
             width: 2rem;
-            border: 4px solid #7c7c7c;
+            border: 4px solid #2a00ff;
             margin: 50px 1000px 0px 50px;
         }
 
         .container .team-cards>h1 {
             color: #000000;
             margin: 30px auto auto 50px;
-
         }
 
         .container .card-box {
             width: 1100px;
-            margin: 10px auto 10px auto;
+            margin: 40px auto 10px auto;
             height: 600px;
 
             display: flex;
-            flex-wrap: wrap;
             flex-direction: row;
-            align-content: stretch;
+            flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+        }
+
+        .container .overay {
+            height: 601px;
+
 
         }
 
+        .container .overaycontent {
+
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+
+        .container .overaycontent>H2 {
+            margin-top: -20px;
+        }
+
+        .container .overaycontent>H1 {
+            margin-top: 20px;
+        }
+
         .container .card:not(hr) {
-            border: 1px solid rgb(133, 133, 133);
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px;
-            
+
             width: 500px;
             height: 300px;
 
-            margin: 20px 0px 40px 0px;
+            margin: 0px 0px 40px 0px;
 
             display: flex;
             flex-direction: row;
@@ -59,7 +87,7 @@
         .container .card>hr {
             width: 100%;
             margin: 0px;
-            border: 15px solid #9c9c9c;
+            border: 15px solid #2a00ff;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
         }
@@ -67,17 +95,15 @@
         .container .card-detail {
             width: 200px;
             height: 275px;
-            
+
 
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-
-
         }
 
         .container .card-img {
-            
+
             width: 250px;
             height: 250px;
 
@@ -85,98 +111,146 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
+
+        .overbox {
+            margin-top: 100px;
+        }
     </style>
+    <script>
+        function openclose() {
+            $('#over').toggle();
+        }
+        function openclose2() {
+            $('#over2').toggle();
+        }
+        function openclose3() {
+            $('#over3').toggle();
+        }
+        function openclose4() {
+            $('#over4').toggle();
+        }
+
+
+    </script>
 </head>
 
 <body>
     <div class="container">
-        <hr />
+        <hr>
         <div class="team-cards">
             <h1>팀원소개</h1>
             <div class="card-box">
                 <div class="card">
-                    <hr />
-                    <div class="card-detail">
-                        <div>mbti
-                            <P>INFJ</P>
-                        </div>
-                        <div>이름
-                            <P>최민혁</P>
-                        </div>
-                        <div>프로젝트 내에서의 역할
-                            <P>팀원소개페이지 제작</P>
-                        </div>
+                    <hr>
+                    <div style="margin: 10px 0px 0px 20px;" class="card-detail">
+                        <p style="margin-bottom: -25px; font-size: 20px;">mbti</p>
+                        <p style="font-size: 30px;"><strong>INFJ</strong></p>
+
+                        <p style="margin-bottom: -25px;">이름</p>
+                        <p style="font-size: 30px;"><strong>최민혁</strong></p>
+
+                        <p style="margin-bottom: -25px;">프로젝트 내에서의 역할</p>
+                        <p style="font-size: 30px;"><strong>xxxx</strong></p>
+
                     </div>
                     <div class="card-img">
-                        <img src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&amp;id=fc3b9048-dd5c-4609-8137-437260ef5088&amp;spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&amp;width=720&amp;userId=&amp;cache=v2" alt="">
-                    </div>
-                    <div class="overay">
-                        <button>클릭시 이동</button>
+                        <p><button style="border: none; margin-top: 40px;" onclick="openclose()"><img
+                                    style="width: 200px; height: 250px; border-radius: 50px;"
+                                    src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt=""></button></p>
                     </div>
                 </div>
                 <div class="card">
-                    <hr />
-                    <div class="card-detail">
+                    <hr>
+                    <div style="margin: 10px 0px 0px 20px;" class="card-detail">
                         <div>mbti
-                            <P>INFJ</P>
+                            <p>INFJ</p>
                         </div>
                         <div>이름
-                            <P>최민혁</P>
+                            <p>최민혁</p>
                         </div>
                         <div>프로젝트 내에서의 역할
-                            <P>팀원소개페이지 제작</P>
+                            <p>팀원소개페이지 제작</p>
                         </div>
                     </div>
                     <div class="card-img">
-                        <img src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&amp;id=fc3b9048-dd5c-4609-8137-437260ef5088&amp;spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&amp;width=720&amp;userId=&amp;cache=v2" alt="">
-                    </div>
-                    <div class="overay">
-                        <button>클릭시 이동</button>
+                        <p><button style="border: none; margin-top: 40px;" onclick="openclose()"><img
+                                    style="width: 200px; height: 250px; border-radius: 50px;"
+                                    src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt=""></button></p>
                     </div>
                 </div>
                 <div class="card">
-                    <hr />
-                    <div class="card-detail">
+                    <hr>
+                    <div style="margin: 10px 0px 0px 20px;" class="card-detail">
                         <div>mbti
-                            <P>INFJ</P>
+                            <p>INFJ</p>
                         </div>
                         <div>이름
-                            <P>최민혁</P>
+                            <p>최민혁</p>
                         </div>
                         <div>프로젝트 내에서의 역할
-                            <P>팀원소개페이지 제작</P>
+                            <p>팀원소개페이지 제작</p>
                         </div>
                     </div>
                     <div class="card-img">
-                        <img src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&amp;id=fc3b9048-dd5c-4609-8137-437260ef5088&amp;spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&amp;width=720&amp;userId=&amp;cache=v2" alt="">
-                    </div>
-                    <div class="overay">
-                        <button>클릭시 이동</button>
+                        <p><button style="border: none; margin-top: 40px;" onclick="openclose()"><img
+                                    style="width: 200px; height: 250px; border-radius: 50px;"
+                                    src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt=""></button></p>
                     </div>
                 </div>
                 <div class="card">
-                    <hr />
-                    <div class="card-detail">
+                    <hr>
+                    <div style="margin: 10px 0px 0px 20px;" class="card-detail">
                         <div>mbti
-                            <P>INFJ</P>
+                            <p>INFJ</p>
                         </div>
                         <div>이름
-                            <P>최민혁</P>
+                            <p>최민혁</p>
                         </div>
                         <div>프로젝트 내에서의 역할
-                            <P>팀원소개페이지 제작</P>
+                            <p>팀원소개페이지 제작</p>
                         </div>
                     </div>
                     <div class="card-img">
-                        <img src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&amp;id=fc3b9048-dd5c-4609-8137-437260ef5088&amp;spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&amp;width=720&amp;userId=&amp;cache=v2" alt="">
-                    </div>
-                    <div class="overay">
-                        <button>클릭시 이동</button>
+                        <p><button style="border: none; margin-top: 40px;" onclick="openclose()"><img
+                                    style="width: 200px; height: 250px; border-radius: 50px;"
+                                    src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt=""></button></p>
                     </div>
                 </div>
             </div>
+            <div class="overbox">
+                <div id="over" class="overay" style="border: 1px solid rgb(223, 223, 223); display: none;">
+
+                    <div class="overayimg" style="float: right;">
+                        <img style="border-radius: 50px;" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" width="400"
+                            height="500" alt="">
+                    </div>
+                    <div id="a" class="overaycontent">
+                        <h1 style="font-size: px;margin-left: -500px; color: #a08df9; margin-bottom: -10px;">MBTI</h1>
+                        <h2 style="font-size: 100px; margin-left:-430px; font:bold;">INTJ</h2>
+
+                        <h1 style="font-size: 80px; margin-left: 200px;">최민혁</h1>
+
+                        <h1 style="font-size: 30px;margin-left:-520px; margin-top: 30px;">장점</h1>
+                        <h3 style="margin-left: -400px">xxxx</h3>
+
+                        <h1 style="font-size: 30px;margin-left: -350px;">프로젝트 내에서 맡은 역할</h1>
+                        <h3 style="margin-left: -350px;">xxxx</h3>
+                        <div class="icolink" style="margin: -80px -200px 0px 10px;">
+                            <a href="https://velog.io/@cceminh" target="_blank" style="margin: 0px 50px 0px 0px;">
+                                <img width="50px" src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
+                            <a href="https://github.com/cceminh" target="_blank"><img width="50px"
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+
+
+
+
     </div>
 </body>
 
