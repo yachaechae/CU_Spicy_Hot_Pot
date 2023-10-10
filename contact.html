@@ -64,6 +64,7 @@
 
       .container__formbox {
         margin: 0 auto;
+        width: 40vw;
       }
 
       #container__nameform,
@@ -99,13 +100,17 @@
       }
 
       #container__savedmsg {
-        width: 18rem;
+        width: 29%;
         margin: 1rem;
       }
     </style>
     <script>
       function msgalarm() {
-        alert('저장되었습니다.');
+        if (!$('#container__nameform').val()) {
+          alert('내용을 모두 입력해주시기 바랍니다.');
+        } else {
+          alert('저장되었습니다.');
+        }
       }
 
       function addMsg() {
