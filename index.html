@@ -1,0 +1,378 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀원소개</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .container {
+            width: 1200px;
+            height: 850px;
+            margin: 10px auto 10px auto;
+
+        }
+
+        .container>hr {
+            width: 2rem;
+            border: 4px solid #2a00ff;
+            margin: 50px 1000px 0px 50px;
+        }
+
+        .container .team-cards>h1 {
+            color: #000000;
+            margin: 30px auto auto 50px;
+        }
+
+        .container .card {
+            cursor: pointer;
+        }
+
+        .container .card-img>img {
+
+            width: 200px;
+            height: 250px;
+            margin: 25px 0px 10px 25px;
+            border-radius: 35px;
+        }
+
+        .container .card-box {
+            width: 1176px;
+            height: 833px;
+            margin: 30px 0px 0px 0px;
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container .overbox {
+            position: relative;
+            bottom: 203px;
+        }
+
+        .container .overay {
+            height: 601px;
+
+            border: 5px solid #c8bfe7;
+            position: relative;
+            bottom: 600px;
+            background-color: rgb(249, 250, 251);
+            border-radius: 25px;
+
+            display: none;
+        }
+
+        .container .overayimgbox {
+            float: right;
+        }
+
+        .container .overimg {
+            border-radius: 50px;
+            margin: 0px 50px 0px 0px;
+            width: 400px;
+            height: 500px;
+        }
+
+        .container .overaycontent {
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: center;
+
+            margin: 40px 0px 0px 0px
+        }
+
+        .container .xclick {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+
+            width: 400;
+            margin: 20px 0px 3px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            font-size: 30px;
+        }
+
+        .overaycontent .name {
+            position: relative;
+            left: 450px;
+        }
+
+        .container .card {
+
+            width: 550px;
+            height: 325px;
+
+            margin: 0px 0px 50px 0px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+
+            cursor: pointer;
+
+        }
+
+
+        .container .card>hr {
+            width: 100%;
+            margin: 0px;
+            border: 15px solid #2a00ff;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .container .card-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            height: 295px;
+        }
+
+        .container .card-img {
+            width: 250px;
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .icolink {
+            background-color: transparent;
+            width: 200px;
+
+            display: flex;
+            justify-content: space-between;
+
+            position: relative;
+            left: 350px;
+        }
+
+        .icolink>a {
+            margin: 0px 0px 50px 0px;
+        }
+
+        .icolink>a>img {
+            width: 50px;
+
+        }
+    </style>
+    <script>
+
+        function openclose() {
+            $('#over').toggle();
+        }
+        function openclose2() {
+            $('#over2').toggle();
+        }
+        function openclose3() {
+            $('#over3').toggle();
+        }
+        function openclose4() {
+            $('#over4').toggle();
+        }
+
+        function clz() {
+            $('#over').toggle();
+        }
+        function clz2() {
+            $('#over2').toggle();
+        }
+        function clz3() {
+            $('#over3').toggle();
+        }
+        function clz4() {
+            $('#over4').toggle();
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <div class="team-cards">
+            <h1>팀원소개</h1>
+            <div class="card-box">
+                <div onclick="openclose()" class="card">
+                    <hr>
+                    <div class="card-detail">
+                        <span>mbti<br>INTJ<br></span>
+                        <span>이름<br>최민혁<br></span>
+                        <span>프로젝트 내에서의 역할<br>3. 팀원 소개 섹션 제작<br></span>
+                    </div>
+                    <div class="card-img">
+                        <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                </div>
+                <div onclick="openclose2()" class="card">
+                    <hr>
+                    <div class="card-detail">
+                        <span>mbti<br>INFP<br></span>
+                        <span>이름<br>권보경<br></span>
+                        <span>프로젝트 내에서의 역할<br>5. Contact 섹션 제작<br></span>
+                    </div>
+                    <div class="card-img">
+                        <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                </div>
+                <div onclick="openclose3()" class="card">
+                    <hr>
+                    <div class="card-detail">
+                        <span>mbti<br>ENFP<br></span>
+                        <span>이름<br>김범수<br></span>
+                        <span>프로젝트 내에서의 역할<br>4. 작업툴 섹션 제작<br></span>
+                    </div>
+                    <div class="card-img">
+                        <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                </div>
+                <div onclick="openclose4()" class="card">
+                    <hr>
+                    <div class="card-detail">
+                        <span>mbti<br>ENFJ<br></span>
+                        <span>이름<br>임세현<br></span>
+                        <span>프로젝트 내에서의 역할<br>1. Header 2. about 3. footer 섹션 제작<br></span>
+                    </div>
+                    <div class="card-img">
+                        <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="overbox">
+                <div id="over" class="overay">
+                    <div class="overayimgbox">
+                        <div><span class="xclick" onclick="clz()">X</span></div>
+                        <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                    <div class="overaycontent">
+                        <h1 class="mbti">MBTI
+                            <br>INTJ
+                        </h1><br>
+                        <h1 class="name">최민혁</h1>
+                        <h1 class="strength">장점
+                            <br>꾸준히 잘한다
+                        </h1><br>
+                        <h1 class="part">프로젝트 내에서 맡은 역할
+                            <br>3.팀원 소개 섹션
+                        </h1><br>
+                        <div class="icolink">
+                            <a target="_blank" href="https://velog.io/@cceminh"><img
+                                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png"
+                                    alt=""></a>
+                            <a target="_blank" href="https://github.com/cceminh"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="over2" class="overay">
+                    <div class="overayimgbox">
+                        <div><span class="xclick" onclick="clz2()">X</span></div>
+                        <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                    <div class="overaycontent">
+                        <h1 class="mbti">MBTI
+                            <br>ENFP
+                        </h1><br>
+                        <h1 class="name">권보경</h1>
+                        <h1 class="strength">장점
+                            <br>문의가 들어오면 설명을 잘한다
+                        </h1><br>
+                        <h1 class="job">프로젝트 내에서 맡은 역할
+                            <br>3.팀원 소개 섹션
+                        </h1><br>
+                        <div class="icolink">
+                            <a target="_blank" href="http://velog.io/@lemontree"><img
+                                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png"
+                                    alt=""></a>
+                            <a target="_blank" href="https://github.com/K-Bokyung"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="over3" class="overay">
+                    <div class="overayimgbox">
+                        <div><span class="xclick" onclick="clz3()">X</span></div>
+                        <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                    <div class="overaycontent">
+                        <h1 class="mbti">MBTI
+                            <br>ENFP
+                        </h1><br>
+                        <h1 class="name">김범수</h1>
+                        <h1 class="strength">장점
+                            <br>자료 정리 및 발표
+                        </h1><br>
+                        <h1 class="job">프로젝트 내에서 맡은 역할
+                            <br>4. 작업툴 섹션 제작
+                        </h1><br>
+                        <div class="icolink">
+                            <a target="_blank" href="https://velog.io/@dkssud31105"><img
+                                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png"
+                                    alt=""></a>
+                            <a target="_blank" href="https://github.com/STINGRAY001"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="over4" class="overay">
+                    <div class="overayimgbox">
+                        <div><span class="xclick" onclick="clz4()">X</span></div>
+                        <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+                    </div>
+                    <div class="overaycontent">
+                        <h1 class="mbti">MBTI
+                            <br>ENFJ
+                        </h1><br>
+                        <h1 class="name">임세현</h1>
+                        <h1 class="strength">장점
+                            <br>경험을 잘 활용한다.
+                        </h1><br>
+                        <h1 class="job">프로젝트 내에서 맡은 역할
+                            <br>1. Header 섹션, 2. About 섹션, 6. Footer 섹션
+                        </h1><br>
+                        <div class="icolink">
+                            <a target="_blank" href="https://velog.io/@yachaechae"><img
+                                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png"
+                                    alt=""></a>
+                            <a target="_blank" href="https://github.com/yachaechae"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
