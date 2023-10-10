@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CU마라탕</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,7 +47,6 @@
         height: 60vh;
         padding: 4rem 5rem;
         border-radius: 10px;
-
 
         /* 이하 코드는 완성 후 삭제 예정 */
         background-color: aquamarine;
@@ -100,6 +100,12 @@
         margin: 1rem;
       }
     </style>
+    <script>
+      function insertMsg() {
+        $('#container__msgboard').toggle();
+        alert('저장되었습니다.');
+      }
+    </script>
   </head>
   <body>
     <section class="container">
@@ -129,10 +135,17 @@
             ></textarea>
           </div>
           <div class="d-flex">
-            <button type="button" class="btn btn-primary" id="container__button">SEND</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="container__button"
+              onclick="insertMsg()"
+            >
+              SEND
+            </button>
           </div>
         </div>
-        <div class="container__msgboard row">
+        <div class="container__msgboard row" id="container__msgboard">
           <div class="card" id="container__savedmsg">
             <div class="card-body">
               <h5 class="card-title">Name</h5>
