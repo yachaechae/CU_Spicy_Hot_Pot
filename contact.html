@@ -73,7 +73,7 @@
       }
 
       #container__msgform {
-        height: 11rem;
+        height: 9rem;
         padding: 0.8rem 0.8rem;
         border-radius: 10px;
         resize: none;
@@ -83,6 +83,20 @@
         margin: 0 auto;
         padding: 1rem 3rem;
         border-radius: 30px;
+        cursor: pointer;
+      }
+
+      .container__msgboard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        margin: 2rem auto;
+      }
+
+      #container__savedmsg {
+        width: 18rem;
+        margin: 1rem;
       }
     </style>
   </head>
@@ -108,13 +122,55 @@
               class="form-control"
               id="container__msgform"
               placeholder="Message"
-              maxlength="354"
+              maxlength="100"
               cols="30"
               rows="5"
             ></textarea>
           </div>
           <div class="d-flex">
             <button type="button" class="btn btn-primary" id="container__button">SEND</button>
+          </div>
+        </div>
+        <div class="container__msgboard row">
+          <div class="card" id="container__savedmsg">
+            <div class="card-body">
+              <h5 class="card-title">Name</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Email@gmail.com</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="container__savedmsg">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="container__savedmsg">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="container__savedmsg">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+            </div>
           </div>
         </div>
       </div>
