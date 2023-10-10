@@ -32,6 +32,12 @@
         border: 1px solid black;
       }
 
+      .container__hr {
+        width: 2rem;
+        border: 3px solid #accef2;
+        margin: 2rem 0;
+      }
+
       .container__title {
         margin: 1rem 0 2rem 1rem;
       }
@@ -64,6 +70,7 @@
 
       .container__formbox {
         margin: 0 auto;
+        width: 40vw;
       }
 
       #container__nameform,
@@ -91,23 +98,51 @@
       }
 
       .container__msgboard {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 2rem auto;
       }
 
       #container__savedmsg {
-        width: 18rem;
+        width: 25%;
         margin: 1rem;
+      }
+
+      @media (width <= 1000px) {
+        .container__cheerup {
+          font-size: 0.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0.5rem auto;
+        }
+
+        .container__letssendmsg {
+          font-size: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 1rem auto;
+        }
+
+        .container__msgboard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 2rem auto;
+        }
+
+        #container__savedmsg {
+          width: 100%;
+          margin: 1rem;
+        }
       }
     </style>
     <script>
-      function msgalarm() {
-        alert('저장되었습니다.');
-      }
-
       function addMsg() {
         let name = $('#container__nameform').val();
         let email = $('#container__emailform').val();
@@ -125,12 +160,28 @@
         </div>`;
         $('#container__msgboard').append(temp_msg);
 
-        name, email, (message = '');
+        $('#container__nameform').val('');
+        $('#container__emailform').val('');
+        $('#container__msgform').val('');
+      }
+
+      function msgalarm() {
+        if (
+          $('#container__nameform').val() &&
+          $('#container__emailform').val() &&
+          $('#container__msgform').val()
+        ) {
+          alert('저장되었습니다.');
+          addMsg();
+        } else {
+          alert('내용을 모두 입력해주시기 바랍니다.');
+        }
       }
     </script>
   </head>
   <body>
     <section class="container">
+      <hr class="container__hr" />
       <h1 class="container__title">CONATCT</h1>
       <p class="container__gogathertown">
         저희는 게더타운에 있어요! <br />
@@ -166,7 +217,7 @@
               type="button"
               class="btn btn-primary"
               id="container__sendbtn"
-              onclick="msgalarm(), addMsg()"
+              onclick="msgalarm()"
             >
               SEND
             </button>
