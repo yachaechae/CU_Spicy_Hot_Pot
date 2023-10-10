@@ -44,7 +44,6 @@
         display: flex;
         flex-direction: column;
         justify-content: start;
-        height: 60vh;
         padding: 4rem 5rem;
         border-radius: 10px;
 
@@ -57,33 +56,37 @@
         font-size: 0.9rem;
       }
 
-      .container__sendmsg {
+      .container__letssendmsg {
         font-size: 2.5rem;
         font-weight: 400;
         margin-bottom: 2rem;
       }
 
-      .container__forms {
+      .container__formbox {
         margin: 0 auto;
       }
 
-      #container__form {
+      #container__nameform,
+      #container__emailform {
         width: 35rem;
         height: 3.5rem;
         border-radius: 10px;
+        margin: 0 auto;
       }
 
       #container__msgform {
+        width: 35rem;
         height: 9rem;
-        padding: 0.8rem 0.8rem;
         border-radius: 10px;
         resize: none;
+        margin: 0 auto;
+        padding: 0.8rem 0.8rem;
       }
 
-      #container__button {
+      #container__sendbtn {
+        border-radius: 30px;
         margin: 0 auto;
         padding: 1rem 3rem;
-        border-radius: 30px;
         cursor: pointer;
       }
 
@@ -101,9 +104,28 @@
       }
     </style>
     <script>
-      function insertMsg() {
-        $('#container__msgboard').toggle();
+      function msgalarm() {
         alert('저장되었습니다.');
+      }
+
+      function addMsg() {
+        let name = $('#container__nameform').val();
+        let email = $('#container__emailform').val();
+        let message = $('#container__msgform').val();
+
+        let temp_msg = `
+        <div class="card" id="container__savedmsg">
+          <div class="card-body">
+            <h5 class="card-title">${name}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">${email}</h6>
+            <p class="card-text">
+              ${message}
+            </p>
+          </div>
+        </div>`;
+        $('#container__msgboard').append(temp_msg);
+
+        name, email, (message = '');
       }
     </script>
   </head>
@@ -116,13 +138,18 @@
       </p>
       <div class="container__box">
         <p class="container__cheerup">CHEER UP!</p>
-        <p class="container__sendmsg">응원 메세지 보내기</p>
-        <div class="container__forms">
+        <p class="container__letssendmsg">응원 메세지 보내기</p>
+        <div class="container__formbox">
           <div class="d-flex mb-3">
-            <input type="text" class="form-control" id="container__form" placeholder="Name" />
+            <input type="text" class="form-control" id="container__nameform" placeholder="Name" />
           </div>
           <div class="d-flex mb-3">
-            <input type="email" class="form-control" id="container__form" placeholder="Email" />
+            <input
+              type="email"
+              class="form-control"
+              id="container__emailform"
+              placeholder="Email"
+            />
           </div>
           <div class="d-flex mb-3">
             <textarea
@@ -138,54 +165,13 @@
             <button
               type="button"
               class="btn btn-primary"
-              id="container__button"
-              onclick="insertMsg()"
+              id="container__sendbtn"
+              onclick="msgalarm(), addMsg()"
             >
               SEND
             </button>
           </div>
-        </div>
-        <div class="container__msgboard row" id="container__msgboard">
-          <div class="card" id="container__savedmsg">
-            <div class="card-body">
-              <h5 class="card-title">Name</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Email@gmail.com</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" id="container__savedmsg">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" id="container__savedmsg">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-            </div>
-          </div>
-          <div class="card" id="container__savedmsg">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-              </p>
-            </div>
-          </div>
+          <div class="container__msgboard row" id="container__msgboard"></div>
         </div>
       </div>
     </section>
