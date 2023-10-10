@@ -92,27 +92,18 @@
       }
 
       .container__msgboard {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 2rem auto;
       }
 
       #container__savedmsg {
-        width: 29%;
+        width: 25%;
         margin: 1rem;
       }
     </style>
     <script>
-      function msgalarm() {
-        if (!$('#container__nameform').val()) {
-          alert('내용을 모두 입력해주시기 바랍니다.');
-        } else {
-          alert('저장되었습니다.');
-        }
-      }
-
       function addMsg() {
         let name = $('#container__nameform').val();
         let email = $('#container__emailform').val();
@@ -130,7 +121,22 @@
         </div>`;
         $('#container__msgboard').append(temp_msg);
 
-        name, email, (message = '');
+        $('#container__nameform').val('');
+        $('#container__emailform').val('');
+        $('#container__msgform').val('');
+      }
+
+      function msgalarm() {
+        if (
+          $('#container__nameform').val() &&
+          $('#container__emailform').val() &&
+          $('#container__msgform').val()
+        ) {
+          alert('저장되었습니다.');
+          addMsg();
+        } else {
+          alert('내용을 모두 입력해주시기 바랍니다.');
+        }
       }
     </script>
   </head>
@@ -171,7 +177,7 @@
               type="button"
               class="btn btn-primary"
               id="container__sendbtn"
-              onclick="msgalarm(), addMsg()"
+              onclick="msgalarm()"
             >
               SEND
             </button>
