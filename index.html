@@ -12,9 +12,9 @@
 
   <!-- 팀원 소개 코드 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <!-- 동일 -->
 
   <style>
@@ -26,25 +26,25 @@
     }
 
     @font-face {
-    font-family: 'LOTTERIACHAB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+      font-family: 'LOTTERIACHAB';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
 
     @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+      font-family: 'Giants-Inline';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
 
     body {
       max-width: 1200px;
@@ -67,11 +67,12 @@
       letter-spacing: 2.5px;
     }
 
-    header > .title{      
-    font-family: 'LOTTERIACHAB';
+    header>.title {
+      font-family: 'LOTTERIACHAB';
     }
 
-    .btn, #container__sendbtn {
+    .btn,
+    #container__sendbtn {
       border: 0;
       background-color: #accef2;
       border-radius: 25px;
@@ -87,7 +88,8 @@
       margin: 2rem 0 1rem;
     }
 
-    .container h1.title, .container__title{
+    .container h1.title,
+    .container__title {
       font-family: 'Giants-Inline';
       color: #009bf9;
     }
@@ -129,7 +131,7 @@
     }
 
     .container .icon-list>ul>li.icon h4 {
-      
+
       font-family: 'SDSamliphopangche_Outline';
       margin: 0 0 1rem;
     }
@@ -176,15 +178,15 @@
       font-style: normal;
     }
 
-    .container .team-cards{
-      
+    .container .team-cards {
+
       position: relative;
     }
 
 
     .container .team-cards .card-img>img {
 
-      width: 200px;
+      width: 235px;
       height: 250px;
       margin: 25px 0px 10px 25px;
       border-radius: 35px;
@@ -203,6 +205,10 @@
       top: 0;
       left: 0;
       width: 100%;
+    }
+
+    .container .details-text {
+      line-height: 1;
     }
 
     .container .team-cards .overay {
@@ -228,25 +234,26 @@
 
     .container .team-cards .overaycontent {
       display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-around;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: space-around;
     }
 
-    .container .team-cards .overaycontent .text > h1 {
-      
-    font-size: 1.5rem;
-    }
-    .container .team-cards .overaycontent .mbti{
-    font-family: 'Giants-Inline';
-    color: #009bf9;
-    font-size: 2.5rem;
+    .container .team-cards .overaycontent .text>h1 {
+
+      font-size: 1.5rem;
     }
 
-    .container .team-cards .overaycontent .mbti > span{
+    .container .team-cards .overaycontent .mbti {
+      font-family: 'Giants-Inline';
+      color: #009bf9;
+      font-size: 2.5rem;
+    }
+
+    .container .team-cards .overaycontent .mbti>span {
       font-size: 1rem;
-    font-family: 'Pretendard-Regular';
-    letter-spacing: 5px;
+      font-family: 'Pretendard-Regular';
+      letter-spacing: 5px;
     }
 
     .overaycontent .name {
@@ -254,13 +261,14 @@
     }
 
 
-    .container .team-cards .overaycontent .strength > span, .container .team-cards .overaycontent .part > span{
+    .container .team-cards .overaycontent .strength>span,
+    .container .team-cards .overaycontent .part>span {
       font-size: 1rem;
-    font-family: 'Pretendard-Regular';
-    letter-spacing: 2px;
+      font-family: 'Pretendard-Regular';
+      letter-spacing: 2px;
     }
 
-    .container .team-cards .card  {
+    .container .team-cards .card {
 
       width: 49%;
       margin: 0px 0px 50px 0px;
@@ -298,9 +306,8 @@
 
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
       flex-wrap: wrap;
-      align-content: center;
+      justify-content: flex-end;
 
     }
 
@@ -326,28 +333,28 @@
 
     .tool-box .maintitle {
 
-font-size: 1.5rem;
-font-family: 'SDSamliphopangche_Outline';
-margin: 1.5rem 0 0.5rem 0;
+      font-size: 1.5rem;
+      font-family: 'SDSamliphopangche_Outline';
+      margin: 1.5rem 0 0.5rem 0;
 
-}
+    }
 
-.tool-box  .tool{
-  display: flex;
-  flex-wrap: wrap;
-    justify-content: space-between;
-}
+    .tool-box .tool {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-.tool-box .box {
+    .tool-box .box {
 
-padding: 15px 10px 10px 15px;
-min-width: 250px;
-width: 24%;
-border: 1px solid #3b485638;
-    margin: 0 0 1rem 0;
-    word-break: keep-all;
+      padding: 15px 10px 10px 15px;
+      min-width: 250px;
+      width: 24%;
+      border: 1px solid #3b485638;
+      margin: 0 0 1rem 0;
+      word-break: keep-all;
 
-}
+    }
 
 
     /* contact: start */
@@ -365,22 +372,22 @@ border: 1px solid #3b485638;
       justify-content: start;
       padding: 4rem 5rem;
       border-radius: 10px;
-    background: #9fadbd;
-    box-shadow: 0px 0 50px 0px #9fabdb;
+      background: #9fadbd;
+      box-shadow: 0px 0 50px 0px #9fabdb;
     }
 
     .container__cheerup {
-      
-    color: #3b4856;
-    letter-spacing: 5px;
+
+      color: #3b4856;
+      letter-spacing: 5px;
       font-size: 0.9rem;
     }
 
     .container__letssendmsg {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      
-    font-family: 'Giants-Inline';
+
+      font-family: 'Giants-Inline';
       text-shadow: 0 0 7px #000000;
       color: #fff;
     }
@@ -414,13 +421,14 @@ border: 1px solid #3b485638;
       justify-content: space-between;
       margin: 2rem auto;
     }
-    .container__msgboard > #container__savedmsg.card:nth-of-type(4){
+
+    .container__msgboard>#container__savedmsg.card:nth-of-type(4) {
       margin: 0 0 1rem 0;
     }
 
     #container__savedmsg {
       width: 22%;
-    margin: 0 1rem 1rem 0;
+      margin: 0 1rem 1rem 0;
     }
 
 
@@ -647,7 +655,9 @@ border: 1px solid #3b485638;
             <span>프로젝트 내에서의 역할<br>3. 팀원 소개 섹션 제작<br></span>
           </div>
           <div class="card-img">
-            <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+            <img
+              src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2Ffc359b31-3af8-443d-ad6d-168d477505be%2FUntitled.png?table=block&id=3ebd3f0d-d147-4ca2-8c8f-916b682b0ed8&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=1440&userId=&cache=v2"
+              alt="">
           </div>
         </div>
         <div onclick="openclose2()" class="card">
@@ -658,7 +668,7 @@ border: 1px solid #3b485638;
             <span>프로젝트 내에서의 역할<br>5. Contact 섹션 제작<br></span>
           </div>
           <div class="card-img">
-            <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+            <img src="https://i.namu.wiki/i/S85K8wLqVmME_UfmLbUJov_qXXVb2ilL6LfmCGyvPn7EnbXZgvTH6TN-_1r29HzhMSQznKbcfLFJZ6nwBHT-_A.webp" alt="">
           </div>
         </div>
         <div onclick="openclose3()" class="card">
@@ -669,7 +679,9 @@ border: 1px solid #3b485638;
             <span>프로젝트 내에서의 역할<br>4. 작업툴 섹션 제작<br></span>
           </div>
           <div class="card-img">
-            <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+            <img
+              src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F5716bf1a-5be7-4218-a4f4-b51f4653a38f%2FUntitled.png?table=block&id=858349be-6158-4648-974d-b4796aa4c9ba&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=1440&userId=&cache=v2"
+              alt="">
           </div>
         </div>
         <div onclick="openclose4()" class="card">
@@ -677,19 +689,21 @@ border: 1px solid #3b485638;
           <div class="card-details">
             <span>mbti<br>ENFJ<br></span>
             <span>이름<br>임세현<br></span>
-            <span>프로젝트 내에서의 역할<br>1. Header 2. about 3. footer 섹션 제작<br></span>
+            <span>프로젝트 내에서의 역할<br>1. Header 2. about <br> 6. footer 섹션 제작<br></span>
           </div>
           <div class="card-img">
-            <img src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+            <img
+              src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&id=fc3b9048-dd5c-4609-8137-437260ef5088&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=720&userId=&cache=v2"
+              alt="">
           </div>
         </div>
 
       </div>
       <div class="overbox">
-        
+
         <div id="over" class="overay">
-          
-          <div class="xclick" ><span class="xclick" onclick="clz()">X</span></div>
+
+          <div class="xclick"><span class="xclick" onclick="clz()">X</span></div>
           <div class="overaycontent">
             <div class="text">
               <h1 class="mbti">
@@ -711,184 +725,202 @@ border: 1px solid #3b485638;
               </div>
             </div>
             <div class="overayimgbox">
-              <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+              <img class="overimg"
+                src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2Ffc359b31-3af8-443d-ad6d-168d477505be%2FUntitled.png?table=block&id=3ebd3f0d-d147-4ca2-8c8f-916b682b0ed8&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=1440&userId=&cache=v2"
+                alt="">
             </div>
           </div>
         </div>
         <div id="over2" class="overay">
+
+          <div class="xclick"><span class="xclick" onclick="clz2()">X</span></div>
           <div class="overaycontent">
-            <h1 class="mbti">MBTI
-              <br>ENFP
-            </h1><br>
-            <h1 class="name">권보경</h1>
-            <h1 class="strength">장점
-              <br>문의가 들어오면 설명을 잘한다
-            </h1><br>
-            <h1 class="job">프로젝트 내에서 맡은 역할
-              <br>3.팀원 소개 섹션
-            </h1><br>
-            <div class="icolink">
-              <a target="_blank" href="http://velog.io/@lemontree"><img
-                  src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
-              <a target="_blank" href="https://github.com/K-Bokyung"><img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+            <div class="text">
+              <h1 class="mbti">
+                <span>MBTI</span>
+                <br>ENFP
+              </h1><br>
+              <h1 class="name">권보경</h1>
+              <h1 class="strength"><span>장점</span>
+                <br>문의가 들어오면 설명을 잘한다
+              </h1><br>
+              <h1 class="part"><span>프로젝트 내에서 맡은 역할</span>
+                <br>3.팀원 소개 섹션
+              </h1><br>
+              <div class="icolink">
+                <a target="_blank" href="http://velog.io/@lemontree"><img
+                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
+                <a target="_blank" href="https://github.com/K-Bokyung"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+              </div>
             </div>
-          </div>
-          <div class="overayimgbox">
-            <div class="xclick"><span class="xclick" onclick="clz2()">X</span></div>
-            <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+            <div class="overayimgbox">
+              <img class="overimg" src="https://i.namu.wiki/i/S85K8wLqVmME_UfmLbUJov_qXXVb2ilL6LfmCGyvPn7EnbXZgvTH6TN-_1r29HzhMSQznKbcfLFJZ6nwBHT-_A.webp" alt="">
+            </div>
           </div>
         </div>
         <div id="over3" class="overay">
+
+          <div class="xclick"><span class="xclick" onclick="clz3()">X</span></div>
           <div class="overaycontent">
-            <h1 class="mbti">MBTI
-              <br>ENFP
-            </h1><br>
-            <h1 class="name">김범수</h1>
-            <h1 class="strength">장점
-              <br>자료 정리 및 발표
-            </h1><br>
-            <h1 class="job">프로젝트 내에서 맡은 역할
-              <br>4. 작업툴 섹션 제작
-            </h1><br>
-            <div class="icolink">
-              <a target="_blank" href="https://velog.io/@dkssud31105"><img
-                  src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
-              <a target="_blank" href="https://github.com/STINGRAY001"><img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+            <div class="text">
+              <h1 class="mbti">
+                <span>MBTI</span>
+                <br>ENFP
+              </h1><br>
+              <h1 class="name">김범수</h1>
+              <h1 class="strength"><span>장점</span>
+                <br>자료 정리 및 발표
+              </h1><br>
+              <h1 class="part"><span>프로젝트 내에서 맡은 역할</span>
+                <br>4. 작업툴 섹션 제작
+              </h1><br>
+              <div class="icolink">
+                <a target="_blank" href="https://velog.io/@dkssud31105"><img
+                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
+                <a target="_blank" href="https://github.com/STINGRAY001"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+              </div>
+            </div>
+            <div class="overayimgbox">
+              <img class="overimg"
+                src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F5716bf1a-5be7-4218-a4f4-b51f4653a38f%2FUntitled.png?table=block&id=858349be-6158-4648-974d-b4796aa4c9ba&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=1440&userId=&cache=v2"
+                alt="">
             </div>
           </div>
-          <div class="overayimgbox">
-            <div><span class="xclick" onclick="clz3()">X</span></div>
-            <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
-          </div>
         </div>
+
         <div id="over4" class="overay">
+
+          <div class="xclick"><span class="xclick" onclick="clz4()">X</span></div>
           <div class="overaycontent">
-            <h1 class="mbti">MBTI
-              <br>ENFJ
-            </h1><br>
-            <h1 class="name">임세현</h1>
-            <h1 class="strength">장점
-              <br>경험을 잘 활용한다.
-            </h1><br>
-            <h1 class="job">프로젝트 내에서 맡은 역할
-              <br>1. Header 섹션, 2. About 섹션, 6. Footer 섹션
-            </h1><br>
-            <div class="icolink">
-              <a target="_blank" href="https://velog.io/@yachaechae"><img
-                  src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
-              <a target="_blank" href="https://github.com/yachaechae"><img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+            <div class="text">
+              <h1 class="mbti">
+                <span>MBTI</span>
+                <br>ENFJ
+              </h1><br>
+              <h1 class="name">임세현</h1>
+              <h1 class="strength"><span>장점</span>
+                <br>경험을 잘 활용한다.
+              </h1><br>
+              <h1 class="part"><span>프로젝트 내에서 맡은 역할</span>
+                <br>1. Header 섹션, 2. About 섹션, 6. Footer 섹션
+              </h1><br>
+              <div class="icolink">
+                <a target="_blank" href="https://velog.io/@yachaechae"><img
+                    src="https://icons.iconarchive.com/icons/simpleicons-team/simple/256/velog-icon.png" alt=""></a>
+                <a target="_blank" href="https://github.com/yachaechae"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+              </div>
+            </div>
+            <div class="overayimgbox">
+              <img class="overimg"
+                src="https://ionian-astronomy-a26.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F2a6cedc1-4fe2-4cef-93fd-d8735f5d6673%2F25842dc6-5e02-4fde-8345-a05edbc32ec1%2F%25EB%2594%25B0%25EB%25B4%2589_.png?table=block&id=fc3b9048-dd5c-4609-8137-437260ef5088&spaceId=2a6cedc1-4fe2-4cef-93fd-d8735f5d6673&width=720&userId=&cache=v2"
+                alt="">
             </div>
           </div>
-          <div class="overayimgbox">
-            <div><span class="xclick" onclick="clz4()">X</span></div>
-            <img class="overimg" src="C:\Users\CMH\Downloads\블로그 자료\증명사진.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container tool-box">
+      <hr>
+
+      <h1 class="title">작업툴 소개</h1>
+      <p class="maintitle">사용된 작업툴 LIST</p>
+      <div class="tool">
+        <div class="box">
+
+          <svg stroke="currentColor" fill="#E65100" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="60px"
+            width="60px" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z">
+            </path>
+          </svg>
+          <h3>HTML</h3>
+          <P>기본 골격을 제작하여 큰 틀(뼈대)을 만드는데 사용되었습니다.</P>
+
+        </div>
+
+        <div class="box">
+
+          <svg stroke="currentColor" fill="#0277BD" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="60px"
+            width="60px" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z">
+            </path>
+          </svg>
+          <h3>CSS</h3>
+          <P>html, bootstrap 으로 만든 큰 틀을 꾸밀 때 사용되었습니다.</P>
+
+        </div>
+
+
+        <div class="box">
+
+          <svg stroke="currentColor" fill="#1266A9" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="60px"
+            width="60px" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.81 6.334h-17.621c-1.391 0-2.517 1.114-2.517 2.488v7.464c0 5.495 4.508 9.951 10.069 9.951h2.518c5.561 0 10.069-4.456 10.069-9.951v-7.464c0-1.374-1.127-2.488-2.517-2.488zM16 22.506c-4.171 0-7.552-3.342-7.552-7.464v-3.732h3.776v3.732c0 2.061 1.69 3.732 3.776 3.732s3.775-1.671 3.775-3.732h3.776c0 4.122-3.381 7.464-7.552 7.464zM23.489 13.798l-3.65-0.933 0.881-3.608 3.713 0.933-0.944 3.607z">
+            </path>
+          </svg>
+          <h3>JQuery</h3>
+          <P>toggle 방식을 활용하여 overay에 사용하거나 message를 저장하였을 때 동작되도록 만들 때 사용되었습니다.</P>
+
+        </div>
+
+
+        <div class="box">
+
+          <svg stroke="currentColor" fill="#673AB7" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="60px"
+            width="60px" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.171 4.999c-0.562 0.083-1.237 0.347-1.716 0.675-0.313 0.207-0.717 0.596-0.95 0.901-0.26 0.343-0.577 1.003-0.702 1.456l-0.106 0.377v15.727l0.106 0.377c0.124 0.453 0.441 1.113 0.702 1.456 0.49 0.641 1.245 1.181 2.003 1.426 0.626 0.2 0.313 0.192 8.486 0.192 8.177 0 7.864 0.008 8.486-0.196 0.762-0.245 1.516-0.781 2.003-1.422 0.26-0.347 0.581-1.007 0.705-1.456l0.102-0.377v-15.727l-0.106-0.377c-0.124-0.452-0.441-1.113-0.701-1.456-0.234-0.306-0.637-0.694-0.95-0.901-0.336-0.23-0.883-0.479-1.305-0.596l-0.37-0.102-7.732-0.004c-4.251-0.004-7.834 0.008-7.954 0.026zM18.709 9.159c1.192 0.196 2.006 0.588 2.538 1.222 0.226 0.268 0.49 0.8 0.6 1.196 0.068 0.26 0.079 0.407 0.083 1.056 0.004 0.683-0.004 0.784-0.083 1.052-0.23 0.8-0.732 1.414-1.543 1.89l-0.279 0.162 0.2 0.064c0.305 0.102 0.815 0.366 1.075 0.562 0.649 0.49 1.101 1.252 1.282 2.161 0.087 0.453 0.087 1.422-0.004 1.837-0.358 1.633-1.622 2.768-3.523 3.149-0.728 0.147-0.916 0.155-4.824 0.155h-3.82v-14.6l3.953 0.015c3.538 0.011 3.99 0.019 4.345 0.079zM13.655 13.277v1.72l1.822-0.015c1.709-0.019 1.837-0.023 2.112-0.098 0.86-0.234 1.233-0.728 1.233-1.633 0-0.694-0.245-1.143-0.777-1.407-0.471-0.234-0.981-0.283-2.983-0.287h-1.407v1.72zM13.655 19.176v2.003l1.991-0.015c2.237-0.015 2.312-0.023 2.863-0.29 0.634-0.309 0.916-0.815 0.916-1.641 0-1.063-0.422-1.652-1.395-1.946-0.275-0.087-0.328-0.087-2.327-0.102l-2.048-0.011v2.003z">
+            </path>
+          </svg>
+          <h3>BOOTSTRAP</h3>
+          <P>font에 주로 사용되며, 그 외 에도 message, message board 등에 사용되었습니다.</P>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- contact: start -->
+    <section class="container" id="contact">
+      <hr class="container__hr" />
+      <h1 class="container__title">CONATCT</h1>
+      <p class="container__gogathertown">
+        저희는 게더타운에 있어요! <br />
+        B09 번 방으로 출발하세요!
+      </p>
+      <div class="container__box">
+        <p class="container__cheerup">CHEER UP!</p>
+        <p class="container__letssendmsg">응원 메세지 보내기</p>
+        <div class="container__formbox">
+          <div class="d-flex mb-3">
+            <input type="text" class="form-control" id="container__nameform" placeholder="Name" />
           </div>
+          <div class="d-flex mb-3">
+            <input type="email" class="form-control" id="container__emailform" placeholder="Email" />
+          </div>
+          <div class="d-flex mb-3">
+            <textarea class="form-control" id="container__msgform" placeholder="Message" maxlength="100" cols="30"
+              rows="5"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary" id="container__sendbtn" onclick="msgalarm()">
+              SEND
+            </button>
+          </div>
+          <div class="container__msgboard row" id="container__msgboard"></div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+    <!-- contact: end -->
 
-  <div class="container tool-box">
-    <hr>
-    
-    <h1 class="title">작업툴 소개</h1>
-    <p class="maintitle">사용된 작업툴 LIST</p>
-    <div class="tool">
-    <div class="box">
-
-        <svg stroke="currentColor" fill="#E65100" stroke-width="0" version="1.1" viewBox="0 0 32 32"
-            height="60px" width="60px" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z">
-            </path>
-        </svg>
-        <h3>HTML</h3>
-        <P>기본 골격을 제작하여 큰 틀(뼈대)을 만드는데 사용되었습니다.</P>
-
-    </div>
-
-    <div class="box">
-
-        <svg stroke="currentColor" fill="#0277BD" stroke-width="0" version="1.1" viewBox="0 0 32 32"
-            height="60px" width="60px" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.017 21.044v0zM4.743 3.519l2.049 22.981 9.194 2.552 9.22-2.556 2.051-22.977h-22.514zM23 8.775l-0.693 7.767h-0l-0.48 5.359-0.042 0.476-5.781 1.603-5.773-1.603-0.395-4.426h2.829l0.201 2.248 3.142 0.847 0.008-0.002 0.002-0 3.134-0.846 0.329-3.655-6.579 0-0.056-0.633-0.129-1.429-0.067-0.756 7.081-0 0.258-2.886h-10.786l-0.056-0.634-0.129-1.429-0.067-0.756h14.118l-0.068 0.756z">
-            </path>
-        </svg>
-        <h3>CSS</h3>
-        <P>html, bootstrap 으로 만든 큰 틀을 꾸밀 때 사용되었습니다.</P>
-
-    </div>
-
-
-    <div class="box">
-
-        <svg stroke="currentColor" fill="#1266A9" stroke-width="0" version="1.1" viewBox="0 0 32 32"
-            height="60px" width="60px" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M24.81 6.334h-17.621c-1.391 0-2.517 1.114-2.517 2.488v7.464c0 5.495 4.508 9.951 10.069 9.951h2.518c5.561 0 10.069-4.456 10.069-9.951v-7.464c0-1.374-1.127-2.488-2.517-2.488zM16 22.506c-4.171 0-7.552-3.342-7.552-7.464v-3.732h3.776v3.732c0 2.061 1.69 3.732 3.776 3.732s3.775-1.671 3.775-3.732h3.776c0 4.122-3.381 7.464-7.552 7.464zM23.489 13.798l-3.65-0.933 0.881-3.608 3.713 0.933-0.944 3.607z">
-            </path>
-        </svg>
-        <h3>JQuery</h3>
-        <P>toggle 방식을 활용하여 overay에 사용하거나 message를 저장하였을 때 동작되도록 만들 때 사용되었습니다.</P>
-
-    </div>
-
-
-    <div class="box">
-
-        <svg stroke="currentColor" fill="#673AB7" stroke-width="0" version="1.1" viewBox="0 0 32 32"
-            height="60px" width="60px" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M8.171 4.999c-0.562 0.083-1.237 0.347-1.716 0.675-0.313 0.207-0.717 0.596-0.95 0.901-0.26 0.343-0.577 1.003-0.702 1.456l-0.106 0.377v15.727l0.106 0.377c0.124 0.453 0.441 1.113 0.702 1.456 0.49 0.641 1.245 1.181 2.003 1.426 0.626 0.2 0.313 0.192 8.486 0.192 8.177 0 7.864 0.008 8.486-0.196 0.762-0.245 1.516-0.781 2.003-1.422 0.26-0.347 0.581-1.007 0.705-1.456l0.102-0.377v-15.727l-0.106-0.377c-0.124-0.452-0.441-1.113-0.701-1.456-0.234-0.306-0.637-0.694-0.95-0.901-0.336-0.23-0.883-0.479-1.305-0.596l-0.37-0.102-7.732-0.004c-4.251-0.004-7.834 0.008-7.954 0.026zM18.709 9.159c1.192 0.196 2.006 0.588 2.538 1.222 0.226 0.268 0.49 0.8 0.6 1.196 0.068 0.26 0.079 0.407 0.083 1.056 0.004 0.683-0.004 0.784-0.083 1.052-0.23 0.8-0.732 1.414-1.543 1.89l-0.279 0.162 0.2 0.064c0.305 0.102 0.815 0.366 1.075 0.562 0.649 0.49 1.101 1.252 1.282 2.161 0.087 0.453 0.087 1.422-0.004 1.837-0.358 1.633-1.622 2.768-3.523 3.149-0.728 0.147-0.916 0.155-4.824 0.155h-3.82v-14.6l3.953 0.015c3.538 0.011 3.99 0.019 4.345 0.079zM13.655 13.277v1.72l1.822-0.015c1.709-0.019 1.837-0.023 2.112-0.098 0.86-0.234 1.233-0.728 1.233-1.633 0-0.694-0.245-1.143-0.777-1.407-0.471-0.234-0.981-0.283-2.983-0.287h-1.407v1.72zM13.655 19.176v2.003l1.991-0.015c2.237-0.015 2.312-0.023 2.863-0.29 0.634-0.309 0.916-0.815 0.916-1.641 0-1.063-0.422-1.652-1.395-1.946-0.275-0.087-0.328-0.087-2.327-0.102l-2.048-0.011v2.003z">
-            </path>
-        </svg>
-        <h3>BOOTSTRAP</h3>
-        <P>font에 주로 사용되며, 그 외 에도 message, message board 등에 사용되었습니다.</P>
-
-    </div>
-  </div>
-
-</div>
-
-
-  <!-- contact: start -->
-  <section class="container" id="contact">
-    <hr class="container__hr" />
-    <h1 class="container__title">CONATCT</h1>
-    <p class="container__gogathertown">
-      저희는 게더타운에 있어요! <br />
-      B09 번 방으로 출발하세요!
-    </p>
-    <div class="container__box">
-      <p class="container__cheerup">CHEER UP!</p>
-      <p class="container__letssendmsg">응원 메세지 보내기</p>
-      <div class="container__formbox">
-        <div class="d-flex mb-3">
-          <input type="text" class="form-control" id="container__nameform" placeholder="Name" />
-        </div>
-        <div class="d-flex mb-3">
-          <input type="email" class="form-control" id="container__emailform" placeholder="Email" />
-        </div>
-        <div class="d-flex mb-3">
-          <textarea class="form-control" id="container__msgform" placeholder="Message" maxlength="100" cols="30"
-            rows="5"></textarea>
-        </div>
-        <div class="text-center">
-          <button type="button" class="btn btn-primary" id="container__sendbtn" onclick="msgalarm()">
-            SEND
-          </button>
-        </div>
-        <div class="container__msgboard row" id="container__msgboard"></div>
-      </div>
-    </div>
-  </section>
-  <!-- contact: end -->
-
-  <footer>TEAM CU마라탕</footer>
+    <footer>TEAM CU마라탕</footer>
 </body>
 
 </html>
