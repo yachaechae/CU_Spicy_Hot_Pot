@@ -516,7 +516,7 @@
         //컨펌 이벤트처리
 
       });
-      $("#modal-open").click(function () {
+      $("#modal-open1").click(function () {
         $("#overbox").css('display', 'flex').hide().fadeIn();
         //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fade in()으로 효과
       });
@@ -524,7 +524,7 @@
         modalClose(); //모달 닫기 함수 호출
       });
       function modalClose() {
-        $("#over").fadeOut(); //페이드아웃 효과
+        $("#overbox").fadeOut(); //페이드아웃 효과
       }
     });
 
@@ -535,11 +535,11 @@
         //컨펌 이벤트처리
 
       });
-      $("#modal-open").click(function () {
+      $("#modal-open2").click(function () {
         $("#overbox2").css('display', 'flex').hide().fadeIn();
         //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fade in()으로 효과
       });
-      $("#close").click(function () {
+      $("#close2").click(function () {
         modalClose(); //모달 닫기 함수 호출
       });
       function modalClose() {
@@ -553,11 +553,11 @@
         //컨펌 이벤트처리
 
       });
-      $("#modal-open").click(function () {
+      $("#modal-open3").click(function () {
         $("#overbox3").css('display', 'flex').hide().fadeIn();
         //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fade in()으로 효과
       });
-      $("#close").click(function () {
+      $("#close3").click(function () {
         modalClose(); //모달 닫기 함수 호출
       });
       function modalClose() {
@@ -571,11 +571,11 @@
         //컨펌 이벤트처리
 
       });
-      $("#modal-open").click(function () {
+      $("#modal-open4").click(function () {
         $("#overbox4").css('display', 'flex').hide().fadeIn();
         //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fade in()으로 효과
       });
-      $("#close").click(function () {
+      $("#close4").click(function () {
         modalClose(); //모달 닫기 함수 호출
       });
       function modalClose() {
@@ -730,7 +730,7 @@
     <div class="team-cards">
       <h1 class="title">팀원소개</h1>
       <div class="card-box">
-        <div id="modal-open" class="card" onclick="click()">
+        <div id="modal-open1" class="card" onclick="click()">
           <hr>
           <div class="card-details">
             <span>mbti<br>INTJ<br></span>
@@ -743,7 +743,7 @@
               alt="">
           </div>
         </div>
-        <div id="modal-open" class="card" onclick="click()">
+        <div id="modal-open2" class="card" onclick="click()">
           <hr>
           <div class="card-details">
             <span>mbti<br>INFP<br></span>
@@ -756,7 +756,7 @@
               alt="">
           </div>
         </div>
-        <div id="modal-open" class="card" onclick="click()">
+        <div id="modal-open3" class="card" onclick="click()">
           <hr>
           <div class="card-details">
             <span>mbti<br>ENFP<br></span>
@@ -769,7 +769,7 @@
               alt="">
           </div>
         </div>
-        <div id="modal-open" class="card" onclick="click()">
+        <div id="modal-open4" class="card" onclick="click()">
           <hr>
           <div class="card-details">
             <span>mbti<br>ENFJ<br></span>
@@ -818,7 +818,7 @@
       <div id="overbox2" class="overbox"> <!-- 모달 WRAP -->
 
           <div id="over" class="overay"> <!-- 모달팝업 -->
-            <div id="close" class="xclick"><span class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
+            <div class="xclick"><span id="close2" class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
             <div class="overaycontent"> <!-- 컨텐츠 영역 -->
               <div class="text">
                 <h1 class="mbti">
@@ -850,7 +850,7 @@
       <div id="overbox3" class="overbox"> <!-- 모달 WRAP -->
 
         <div id="over" class="overay"> <!-- 모달팝업 -->
-          <div id="close" class="xclick"><span class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
+          <div class="xclick"><span id="close3" class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
           <div class="overaycontent"> <!-- 컨텐츠 영역 -->
             <div class="text">
               <h1 class="mbti">
@@ -882,7 +882,7 @@
       <div id="overbox4" class="overbox"> <!-- 모달 WRAP -->
 
         <div id="over" class="overay"> <!-- 모달팝업 -->
-          <div id="close" class="xclick"><span class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
+          <div class="xclick"><span id="close4" class="xclickk" onclick="click()">X</span></div> <!-- 로고영역 -->
           <div class="overaycontent"> <!-- 컨텐츠 영역 -->
             <div class="text">
               <h1 class="mbti">
